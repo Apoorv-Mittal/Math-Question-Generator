@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Question Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">MATH TIME!</a>
+            </div>
+            <ul class="nav navbar-nav ">
+                <li><a  href="skeleton.html">Addition</a></li>
+                <li><a  href="subtract.html">Subtraction</a></li>
+                <li><a  href="multi.html">Multiplication</a></li>
+                <li><a  href="divi.html">Division</a></li>
+            </ul>
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <center>
+            <div id="upper"> </div>
+            <div style="font-size: 100px;position: absolute">*</div>
+            <div id="lower"> </div>
+            <input type="text" placeholder="Enter Answer" id="ans">
+            <input type="button" value="Check Answer" onclick="checkans(3)">
+            </center>
+        </div>
+    </div>
+    <div class="container" id="set">
+        <div class="jumbotron">
+            <center>
+              <div style="font-size: 50px;">Digits used for </div><br/>
+              <div style="font-size: 25px;">Multiplication : <input id="add" type="text" value="3"></div>
+              <input type="button" value="Set" onclick="set()"> <br/>
+            </center>
+        </div>
+    </div>
+
+<script src="machine.js"></script>
+</body>
+</html>
